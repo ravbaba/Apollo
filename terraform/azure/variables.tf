@@ -13,7 +13,7 @@ variable "region" {
   default = "North Europe"
 }
 
-variable "vn_cidr_block" {
+variable "vpc_cidr_block" {
   description = "Cidr block for the VN."
   default = "10.0.0.0/16"
 }

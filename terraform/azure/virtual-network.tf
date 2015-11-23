@@ -1,6 +1,6 @@
 resource "azure_virtual_network" "virtual-network" {
   name = "virtual-network"
-  address_space = ["${var.vn_cidr_block}"]
+  address_space = ["${var.vpc_cidr_block}"]
   location = "${var.region}"
 
   subnet {

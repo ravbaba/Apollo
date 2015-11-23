@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Util functions cloud reusable.
-APOLLO_ROOT=$(dirname "${BASH_SOURCE}")/..
 DEFAULT_CONFIG="${APOLLO_ROOT}/bootstrap/${APOLLO_PROVIDER}/${APOLLO_CONFIG_FILE-"config-default.sh"}"
 DYNAMIC_INVENTORY="https://raw.githubusercontent.com/Capgemini/terraform.py/master/terraform.py"
 

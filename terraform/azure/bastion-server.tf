@@ -69,7 +69,7 @@ resource "azure_instance" "bastion" {
       "sudo mkdir -p /etc/openvpn",
       "sudo docker run --name ovpn-data -v /etc/openvpn busybox",
       /* Generate OpenVPN server config */
-      "sudo docker run --volumes-from ovpn-data --rm gosuri/openvpn ovpn_genconfig -p ${var.vn_cidr_block} -u udp://${azure_instance.bastion.vip_address}"
+      "sudo docker run --volumes-from ovpn-data --rm gosuri/openvpn ovpn_genconfig -p ${var.vpc_cidr_block} -u udp://${azure_instance.bastion.vip_address}"
     ]
   }
 }

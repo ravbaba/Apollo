@@ -1,4 +1,4 @@
-output "vn_cidr_block.ip" {
+output "vpc_cidr_block.ip" {
   value = "${azure_virtual_network.virtual-network.address_space.0}"
 }
 /* bastion address */
